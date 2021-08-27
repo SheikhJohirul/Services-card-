@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.container .box{
+	position: relative;
+	width: 350px;
+	margin: 20px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	border: 2px solid #000;
+}
+.container .box .icon{
+	width: 80px;
+	height: 80px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: 700;
+	background: #091921;
+	border-radius: 50%;
+	color: #fff;
+	transition: 1s;
+}
+.container .box:nth-child(1) .icon{
+	background: #c8ff00;
+	box-shadow: 0 0 0 0 #c8ff00;
+}
+.container .box:nth-child(1):hover .icon{
+	box-shadow: 0 0 0 500px #c8ff00;
+}
+
+.container .box:nth-child(2) .icon{
+	background: #33ff0d;
+	box-shadow: 0 0 0 0 #33ff0d;
+}
+.container .box:nth-child(2):hover .icon{
+	box-shadow: 0 0 0 500px #33ff0d;
+}
+.container .box:nth-child(3) .icon{
+	background: #cd00ff;
+	box-shadow: 0 0 0 0 #cd00ff;
+}
+.container .box:nth-child(3):hover .icon{
+	box-shadow: 0 0 0 500px #cd00ff;
+}
+
+.box .content{
+	position: relative;
+	transition: .5s;
+	z-index: 10;
+}
+.box .content h2{
+	font-size: 30px;
+	color: #010001;
+}
+.box .content p{
+   color: #010001; 
+   text-align: justify;
+
+ }
+
+.box .content a{
+	font-size: 20px;
+	color: #010001;
+	text-decoration: none;
+	border: 2px solid #000;
+	padding: 5px 15px;
+	position: relative;
+	top: 10px;
+	border-radius: 5px;
+}
